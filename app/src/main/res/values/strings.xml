@@ -4,10 +4,22 @@
     <string name="btnEj1Text">Ir al Ejercicio 1</string>
     <string name="btnEj2Text">Ir al Ejercicio 2</string>
     <string name="btnEj3Text">Ir al Ejercicio 3</string>
+
     <string name="Ej1Titulo">Ejercicio 1</string>
     <string name="btnEj1SalirText">Cerrar Actividad</string>
     <string name="SalirDialogTitle">¿Estás seguro de que quieres salir?</string>
     <string name="SalirDialogBody">Si sales no pasara nada, pero te quitaremos 200 euros del banco.</string>
     <string name="SalirDialogSi">SI</string>
     <string name="SalirDialogNo">NO</string>
+
+    <string name="Ej2Title">Ejercicio 2</string>
+    <string name="btnEj2Aceptar">Aceptar</string>
+    <string name="Ej2EditTextHint">Nombre</string>
+    <string name="btnVolverText">Volver</string>
+    <string name="ToastEj2NoName">Inserte un nombre por favor</string>
+    <string-array name="DialogOptionsEj2">
+        <item>BD</item>
+        <item>ED</item>
+        <item>PDM</item>
+    </string-array>
 </resources>

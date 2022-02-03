@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio_Dialogos">
         <activity
+            android:name=".Ejercicio2"
+            android:exported="true" />
+        <activity
             android:name=".Ejercicio1"
             android:exported="true" />
         <activity

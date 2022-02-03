@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         btnEj1.setOnClickListener(view -> AbrirActivity(Ejercicio1.class));
 
         Button btnEj2 = findViewById(R.id.btnEj2);
-        btnEj2.setOnClickListener(view -> AbrirActivity(MainActivity.class));
+        btnEj2.setOnClickListener(view -> AbrirActivity(Ejercicio2.class));
 
         Button btnEj3 = findViewById(R.id.btnEj3);
         btnEj3.setOnClickListener(view -> AbrirActivity(MainActivity.class));

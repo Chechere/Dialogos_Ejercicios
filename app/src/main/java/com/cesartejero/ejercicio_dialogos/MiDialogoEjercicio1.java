@@ -3,13 +3,12 @@ package com.cesartejero.ejercicio_dialogos;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 
-public class MiDialogo extends DialogFragment {
+public class MiDialogoEjercicio1 extends DialogFragment {
     public interface MiDialogoListener {
         void onDialogResult(boolean devuelto);
     }
@@ -25,6 +24,7 @@ public class MiDialogo extends DialogFragment {
                 .setMessage(R.string.SalirDialogBody)
                 .setNegativeButton(R.string.SalirDialogNo, (dialog, id) -> miEscuchador.onDialogResult(false))
                 .setPositiveButton(R.string.SalirDialogSi, (dialog, id) -> miEscuchador.onDialogResult(true));
+
         return builder.create();
     }
 
