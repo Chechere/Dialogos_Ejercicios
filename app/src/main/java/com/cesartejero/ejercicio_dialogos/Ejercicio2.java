@@ -34,7 +34,7 @@ public class Ejercicio2 extends AppCompatActivity implements MiDialogoEjercicio2
                     Bundle bundle=new Bundle();
                     bundle.putString("title", editTextnombre.getText().toString());
                     selectDialog.setArguments(bundle);
-                    selectDialog.show(getSupportFragmentManager(), "Cerrar");
+                    selectDialog.show(getSupportFragmentManager(), "Asignatura");
                 }
             }
         });

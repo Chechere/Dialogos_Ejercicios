@@ -22,4 +22,7 @@
         <item>ED</item>
         <item>PDM</item>
     </string-array>
+
+    <string name="Ej3Title">Ejercicio 3</string>
+    <string name="btEj3Fecha">Elegir Fecha</string>
 </resources>

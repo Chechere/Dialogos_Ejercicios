@@ -8,9 +8,6 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         btnEj2.setOnClickListener(view -> AbrirActivity(Ejercicio2.class));
 
         Button btnEj3 = findViewById(R.id.btnEj3);
-        btnEj3.setOnClickListener(view -> AbrirActivity(MainActivity.class));
+        btnEj3.setOnClickListener(view -> AbrirActivity(Ejercicio3.class));
     }
 
     void AbrirActivity(Class activityClass) {
