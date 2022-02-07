@@ -30,13 +30,6 @@ public class MiDialogoEjercicio3  extends DialogFragment implements DatePickerDi
         int month = c.get(Calendar.MONTH);
         int day = c.get(Calendar.DAY_OF_MONTH);
 
-        /*assert getArguments() != null;
-        final String title = getArguments().getString("title");
-        String[] opciones = getResources().getStringArray(R.array.DialogOptionsEj2);
-
-        builder.setTitle(title)
-                .setItems(opciones, (dialogInterface, i) -> miEscuchador.onDialogResult(opciones[i]));
-        */
         return new DatePickerDialog(getActivity(), this, year, month, day);
     }
 

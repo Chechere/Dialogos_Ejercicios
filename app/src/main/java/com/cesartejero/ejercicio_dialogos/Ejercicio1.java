@@ -19,6 +19,10 @@ public class Ejercicio1 extends AppCompatActivity implements MiDialogoEjercicio1
         DialogFragment cerrarDialog = new MiDialogoEjercicio1();
         Button btnCerrar = findViewById(R.id.btnEj1Salir);
         btnCerrar.setOnClickListener(view -> cerrarDialog.show(getSupportFragmentManager(), "Cerrar"));
+
+
+
+
     }
 
     void CerrarAplicacion() {

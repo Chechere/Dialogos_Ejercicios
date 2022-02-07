@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Ejercicio2 extends AppCompatActivity implements MiDialogoEjercicio2.MiDialogoListener {
-    TextView label;
+    private TextView label;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +28,13 @@ public class Ejercicio2 extends AppCompatActivity implements MiDialogoEjercicio2
         btnAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(editTextnombre.getText().toString().equals("")) {
+                String nombre = editTextnombre.getText().toString();
+
+                if(nombre.equals("")) {
                     Toast.makeText(Ejercicio2.this, R.string.ToastEj2NoName, Toast.LENGTH_LONG).show();
                 } else {
                     Bundle bundle=new Bundle();
-                    bundle.putString("title", editTextnombre.getText().toString());
+                    bundle.putString("title", nombre);
                     selectDialog.setArguments(bundle);
                     selectDialog.show(getSupportFragmentManager(), "Asignatura");
                 }
@@ -44,6 +46,7 @@ public class Ejercicio2 extends AppCompatActivity implements MiDialogoEjercicio2
 
     @Override
     public void onDialogResult(String opcion) {
-        label.setText("Has escogido: " + opcion);
+        String text = "Has escogido: " + opcion;
+        label.setText(text);
     }
 }
